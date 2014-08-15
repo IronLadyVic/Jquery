@@ -1,0 +1,46 @@
+#container{
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	height:100%;
+	/*background-color: green;*/
+	display: flex;
+	
+}
+#sidebar{
+	background-color: #00bff2;
+	height: 100%;
+	flex-basis:20em;
+	flex: none;
+	width: 3em;
+
+}
+#main{
+	background-color: rgb(220,220,220);
+	flex-grow:1;
+	height: 100%;
+	width: 100%;
+
+}
+
+#sidebar-handle{
+	color: white;
+	display: block;
+	width: 1em;
+	float:right;
+}
+.accordian{
+	list-style-type: none;
+	width: 50%;
+}
+
+.accordian li p{
+	/*height: 0em;*/
+	overflow: hidden;
+}
+
+.accordian li i{
+	color: #00bff2;
+}
+
