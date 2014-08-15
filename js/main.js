@@ -34,9 +34,13 @@ $(function(){
 $(".accordian p").hide();
 $(".accordian h2").on("click",function(){
 
+//close other opened items
 
+$(".accordian h2").not(this).next().slideUp(); //using next to go to the next sibling of the h2. which is the p.
+
+//controlling the item being clicked on
 	if($(this).data("open") == 1){
-			//slide up
+	//slide up
 	$(this).next().slideUp(function(){
 	$(this).prev().find("i").removeClass("fa fa-arrow-circle-up").addClass("fa fa-arrow-circle-down");
 	$(this).prev().data("open",0);
